@@ -1,5 +1,4 @@
-# Clinical-Decision-Support-System
-Clinical Decision Support System using Multi-Agent AI workflows with A2A and MCP protocols, powered by Llama 3.3, FastAPI, and Streamlit.
+
 # Clinical Decision Support System using A2A & MCP
 
 An AI-powered multi-agent Clinical Decision Support System built using FastAPI, Groq Llama 3.3, Streamlit, A2A (Agent-to-Agent) Protocol, and MCP (Model Context Protocol).
