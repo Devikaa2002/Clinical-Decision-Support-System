@@ -212,13 +212,6 @@ http://localhost:8501
 
 ---
 
-# Contributors
-
-- Devika K
-- Sai Sri Harine C
-
----
-
 # License
 
 This project is developed for academic and research purposes.
