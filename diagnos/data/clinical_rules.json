@@ -1,0 +1,185 @@
+{
+  "HEART_score": {
+    "name": "HEART Score for Chest Pain",
+    "description": "Stratifies risk of Major Adverse Cardiac Events (MACE) in chest pain patients.",
+    "applicable_conditions": [
+      "chest pain",
+      "chest tightness",
+      "angina"
+    ],
+    "scoring_criteria": {
+      "History": {
+        "0": "Slightly suspicious",
+        "1": "Moderately suspicious",
+        "2": "Highly suspicious"
+      },
+      "ECG": {
+        "0": "Normal",
+        "1": "Non-specific repolarization disturbance",
+        "2": "Significant ST deviation"
+      },
+      "Age": {
+        "0": "< 45 years",
+        "1": "45-64 years",
+        "2": ">= 65 years"
+      },
+      "Risk_factors": {
+        "0": "No known risk factors",
+        "1": "1-2 risk factors (HTN, DM, hyperlipidemia, obesity, smoking, family hx)",
+        "2": "3+ risk factors or history of atherosclerotic disease"
+      },
+      "Troponin": {
+        "0": "Normal (le 99th percentile)",
+        "1": "1-3x normal",
+        "2": "> 3x normal"
+      }
+    },
+    "interpretation": {
+      "0-3": {
+        "risk": "Low",
+        "mace_rate": "0.9-1.7%",
+        "recommendation": "Consider early discharge with outpatient follow-up"
+      },
+      "4-6": {
+        "risk": "Moderate",
+        "mace_rate": "12-16.6%",
+        "recommendation": "Admit for observation, serial troponins, cardiology consult"
+      },
+      "7-10": {
+        "risk": "High",
+        "mace_rate": "50-65%",
+        "recommendation": "Urgent invasive strategy, early cardiology intervention"
+      }
+    }
+  },
+  "CHA2DS2_VASc": {
+    "name": "CHA2DS2-VASc Score",
+    "description": "Estimates stroke risk in patients with atrial fibrillation to guide anticoagulation therapy.",
+    "applicable_conditions": [
+      "atrial fibrillation",
+      "AF",
+      "a-fib"
+    ],
+    "scoring_criteria": {
+      "Congestive_Heart_Failure": {
+        "0": "Absent",
+        "1": "Present"
+      },
+      "Hypertension": {
+        "0": "Absent",
+        "1": "Present"
+      },
+      "Age_75_or_older": {
+        "0": "No",
+        "2": "Yes"
+      },
+      "Diabetes_Mellitus": {
+        "0": "Absent",
+        "1": "Present"
+      },
+      "Stroke_TIA_history": {
+        "0": "No",
+        "2": "Yes"
+      },
+      "Vascular_disease": {
+        "0": "Absent",
+        "1": "Present (prior MI, PAD, aortic plaque)"
+      },
+      "Age_65_74": {
+        "0": "No",
+        "1": "Yes"
+      },
+      "Sex_category_female": {
+        "0": "Male",
+        "1": "Female"
+      }
+    },
+    "interpretation": {
+      "0": {
+        "risk": "Low",
+        "annual_stroke_rate": "0%",
+        "recommendation": "No anticoagulation needed (male); reassess (female with score 1)"
+      },
+      "1": {
+        "risk": "Low-Moderate",
+        "annual_stroke_rate": "1.3%",
+        "recommendation": "Consider oral anticoagulation (OAC)"
+      },
+      "2": {
+        "risk": "Moderate",
+        "annual_stroke_rate": "2.2%",
+        "recommendation": "Oral anticoagulation recommended"
+      },
+      "3+": {
+        "risk": "Moderate-High",
+        "annual_stroke_rate": "3.2-15.2%",
+        "recommendation": "Oral anticoagulation strongly recommended"
+      }
+    }
+  },
+  "Wells_DVT": {
+    "name": "Wells Score for DVT",
+    "description": "Estimates probability of Deep Vein Thrombosis.",
+    "applicable_conditions": [
+      "leg swelling",
+      "DVT",
+      "deep vein thrombosis",
+      "calf pain"
+    ],
+    "scoring_criteria": {
+      "Active_cancer": {
+        "0": "No",
+        "1": "Yes (treatment within 6 months or palliative)"
+      },
+      "Paralysis_paresis_immobilization": {
+        "0": "No",
+        "1": "Yes"
+      },
+      "Bedridden_3_days_or_surgery_within_12_weeks": {
+        "0": "No",
+        "1": "Yes"
+      },
+      "Localized_tenderness_along_deep_venous_system": {
+        "0": "No",
+        "1": "Yes"
+      },
+      "Entire_leg_swollen": {
+        "0": "No",
+        "1": "Yes"
+      },
+      "Calf_swelling_3cm_greater_than_other_side": {
+        "0": "No",
+        "1": "Yes"
+      },
+      "Pitting_edema": {
+        "0": "No",
+        "1": "Yes"
+      },
+      "Collateral_superficial_veins": {
+        "0": "No",
+        "1": "Yes"
+      },
+      "Alternative_diagnosis_as_likely": {
+        "0": "No",
+        "-2": "Yes"
+      }
+    },
+    "interpretation": {
+      "0-1": {
+        "risk": "Low",
+        "probability": "5%",
+        "recommendation": "D-dimer testing; if negative, DVT excluded"
+      },
+      "2": {
+        "risk": "Moderate",
+        "probability": "17%",
+        "recommendation": "D-dimer or ultrasound; consider anticoagulation if confirmed"
+      },
+      "3+": {
+        "risk": "High",
+        "probability": "53%",
+        "recommendation": "Ultrasound recommended; start anticoagulation if confirmed"
+      }
+    }
+  }
+}

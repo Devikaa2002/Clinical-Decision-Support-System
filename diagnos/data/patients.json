@@ -1,0 +1,325 @@
+{
+  "P001": {
+    "patient_id": "P001",
+    "name": "Rajesh Kumar",
+    "age": 58,
+    "gender": "Male",
+    "blood_group": "B+",
+    "demographics": {
+      "height_cm": 170,
+      "weight_kg": 85,
+      "bmi": 29.4
+    },
+    "vitals_latest": {
+      "blood_pressure_systolic": 155,
+      "blood_pressure_diastolic": 95,
+      "heart_rate": 88,
+      "temperature_celsius": 37.1,
+      "spo2": 96,
+      "respiratory_rate": 18,
+      "recorded_at": "2026-04-09T14:30:00"
+    },
+    "medical_history": [
+      {
+        "condition": "Type 2 Diabetes Mellitus",
+        "diagnosed_year": 2018,
+        "status": "ongoing",
+        "medications": [
+          "Metformin 500mg BD",
+          "Glimepiride 2mg OD"
+        ]
+      },
+      {
+        "condition": "Hypertension",
+        "diagnosed_year": 2016,
+        "status": "ongoing",
+        "medications": [
+          "Amlodipine 5mg OD",
+          "Telmisartan 40mg OD"
+        ]
+      },
+      {
+        "condition": "Hyperlipidemia",
+        "diagnosed_year": 2020,
+        "status": "ongoing",
+        "medications": [
+          "Atorvastatin 20mg OD"
+        ]
+      }
+    ],
+    "allergies": [
+      "Penicillin",
+      "Sulfonamides"
+    ],
+    "surgical_history": [
+      "Appendectomy (2005)"
+    ],
+    "family_history": [
+      "Father: Myocardial Infarction at age 55",
+      "Mother: Type 2 Diabetes"
+    ],
+    "lab_results_recent": {
+      "HbA1c": {
+        "value": 7.8,
+        "unit": "%",
+        "reference": "< 7.0",
+        "date": "2026-03-15"
+      },
+      "LDL_cholesterol": {
+        "value": 145,
+        "unit": "mg/dL",
+        "reference": "< 100",
+        "date": "2026-03-15"
+      },
+      "HDL_cholesterol": {
+        "value": 38,
+        "unit": "mg/dL",
+        "reference": "> 40",
+        "date": "2026-03-15"
+      },
+      "Triglycerides": {
+        "value": 210,
+        "unit": "mg/dL",
+        "reference": "< 150",
+        "date": "2026-03-15"
+      },
+      "Creatinine": {
+        "value": 1.2,
+        "unit": "mg/dL",
+        "reference": "0.7-1.3",
+        "date": "2026-03-15"
+      },
+      "Troponin_I": {
+        "value": 0.02,
+        "unit": "ng/mL",
+        "reference": "< 0.04",
+        "date": "2026-04-09"
+      }
+    },
+    "current_complaints": [
+      "Chest tightness on exertion for 2 weeks",
+      "Occasional breathlessness climbing stairs",
+      "Mild epigastric discomfort"
+    ]
+  },
+  "P002": {
+    "patient_id": "P002",
+    "name": "Lakshmi Devi",
+    "age": 72,
+    "gender": "Female",
+    "blood_group": "O+",
+    "demographics": {
+      "height_cm": 155,
+      "weight_kg": 62,
+      "bmi": 25.8
+    },
+    "vitals_latest": {
+      "blood_pressure_systolic": 148,
+      "blood_pressure_diastolic": 88,
+      "heart_rate": 82,
+      "temperature_celsius": 36.8,
+      "spo2": 94,
+      "respiratory_rate": 20,
+      "recorded_at": "2026-04-09T10:15:00"
+    },
+    "medical_history": {},
+    "allergies": [
+      "Aspirin (GI bleeding)",
+      "Iodine contrast"
+    ],
+    "surgical_history": [
+      "Total knee replacement - Right (2019)"
+    ],
+    "family_history": [
+      "Mother: Stroke at age 68",
+      "Sister: Atrial Fibrillation"
+    ],
+    "lab_results_recent": {
+      "BNP": {
+        "value": 450,
+        "unit": "pg/mL",
+        "reference": "< 100",
+        "date": "2026-04-01"
+      },
+      "eGFR": {
+        "value": 42,
+        "unit": "mL/min",
+        "reference": "> 60",
+        "date": "2026-04-01"
+      },
+      "Creatinine": {
+        "value": 1.6,
+        "unit": "mg/dL",
+        "reference": "0.6-1.1",
+        "date": "2026-04-01"
+      },
+      "INR": {
+        "value": 1.1,
+        "unit": "",
+        "reference": "0.9-1.1",
+        "date": "2026-04-01"
+      },
+      "Hemoglobin": {
+        "value": 10.8,
+        "unit": "g/dL",
+        "reference": "12-16",
+        "date": "2026-04-01"
+      }
+    },
+    "current_complaints": [
+      "Increasing ankle swelling for 1 week",
+      "Worsening breathlessness at rest",
+      "Palpitations - irregular",
+      "Fatigue and decreased appetite"
+    ],
+    "patient_name": "Lakshmi Devi",
+    "current_medications": [],
+    "_last_updated": "2026-04-13T08:11:37.224825",
+    "clinical_notes": [
+      {
+        "date": "2026-04-13T08:11:28.087887",
+        "type": "follow_up",
+        "note": "Retrieve and summarize patient P002, Lakshmi Devi's medical history, including current medications and allergies.",
+        "source": "history-agent",
+        "_ingested_at": "2026-04-13T08:11:28.355085"
+      },
+      {
+        "date": "2026-04-13T08:11:35.995960",
+        "type": "diagnosis_run",
+        "source": "planner-orchestrator",
+        "case_summary": "72-year-old female patient P002, Lakshmi Devi, with Atrial Fibrillation and CHF NYHA II, presenting with increasing ankle swelling, worsening breathlessness, irregular palpitations, and decreased appetite.",
+        "agent_summaries": {
+          "History Agent": "1. PATIENT OVERVIEW\n   - Name: Lakshmi Devi\n   - Age: 72\n   - Gender: Female\n\n2. CURRENT PRESENTATION\n   - Complaints: Increasing ankle swelling for 1 week, Worsening breathlessness at rest, Palpitations - irregular, Fatigue and decreased appetite\n   - Vitals: \n     - Blood Pressure: 148/88\n     - Heart Rate: 82\n     - Temperature: 36.8\u00b0C\n     - SpO2: 94%\n     - Respiratory Rate: 20\n\n3. MEDICAL HISTORY\n   - No conditions explicitly mentioned\n\n4. ALLERGIES\n   - Aspirin (GI bleeding)\n   - Iodine c",
+          "Risk Agent": "**Risk Report for Lakshmi Devi, Age 72**\n\n**1. SCORING SYSTEMS APPLIED:**\nThe CHA2DS2-VASc Score was applied to assess the stroke risk for Lakshmi Devi.\n\n**2. SCORE BREAKDOWN:**\nThe CHA2DS2-VASc Score criteria breakdown is as follows:\n- Congestive Heart Failure: Present (Score: 1)\n- Hypertension: Present (blood pressure systolic: 148mmHg) (Score: 1)\n- Age 75 or older: No (age: 72) (Score: 0)\n- Diabetes Mellitus: Not documented (Score: 0)\n- Stroke/TIA history: Not documented (Score: 0)\n- Vascular"
+        },
+        "final_report": "CLINICAL DECISION SUPPORT REPORT\n=================================\n\n1. EXECUTIVE SUMMARY\n   Lakshmi Devi, a 72-year-old female patient, presents with increasing ankle swelling for 1 week, worsening breathlessness at rest, irregular palpitations, and decreased appetite.\n\n2. PATIENT PROFILE\n   - Name: Lakshmi Devi\n   - Age: 72\n   - Gender: Female\n\n3. CLINICAL PRESENTATION\n   - Complaints: Increasing ankle swelling for 1 week, Worsening breathlessness at rest, Palpitations - irregular, Fatigue and decreased appetite\n   - Vitals: \n     - Blood Pressure: 148/88\n     - Heart Rate: 82\n     - Temperature: 36.8\u00b0C\n     - SpO2: 94%\n     - Respiratory Rate: 20\n\n4. RISK ASSESSMENT\n   The patient has a moderate risk level based on the CHA2DS2-VASc Score of 4, indicating a moderate risk of stroke.\n\n5. DIFFERENTIAL DIAGNOSES\n   - Atrial fibrillation with stroke risk\n   - Congestive heart failure exacerbation\n   - Chronic kidney disease progression\n\n6. CLINICAL RECOMMENDATIONS\n   a) IMMEDIATE (next 1-2 hours)\n      - Monitor blood pressure and aim for optimal control (<130/80 mmHg) to reduce cardiovascular risk.\n   b) SHORT-TERM (next 24-48 hours)\n      - Continue oral anticoagulation with Apixaban 5mg twice daily.\n      - Consider adding an antiplatelet agent (e.g., aspirin 81mg daily) if not already on one, after discussing the benefits and risks with the patient.\n   c) FOLLOW-UP\n      - Order regular laboratory tests (e.g., complete blood count, basic metabolic panel, liver function tests) to monitor for potential side effects of anticoagulation therapy.\n\n7. MEDICATION CONSIDERATIONS\n   The patient is currently on Apixaban 5mg twice daily. However, it is essential to note that the patient has allergies to Aspirin (GI bleeding) and Iodine contrast.\n\n8. RED FLAGS & ALERTS\n   - Elevated BNP (450 pg/mL)\n   - Reduced eGFR (42 mL/min)\n   - Elevated Creatinine (1.6 mg/dL)\n   - Low Hemoglobin (10.8 g/dL)\n   - Allergies: Aspirin (GI bleeding), Iodine contrast\n\n9. PROVENANCE\n   The contributing agents are the History Agent and the Risk Agent.",
+        "risk_scores": {
+          "scoring_systems_applied": [
+            "CHA2DS2-VASc Score"
+          ],
+          "individual_scores": [
+            {
+              "scoring_system": "CHA2DS2-VASc Score",
+              "assessment_type": "stroke risk assessment",
+              "criteria_breakdown": [
+                {
+                  "criterion": "Congestive Heart Failure",
+                  "patient_finding": "Present",
+                  "score": 1
+                },
+                {
+                  "criterion": "Hypertension",
+                  "patient_finding": "Present (blood pressure systolic: 148mmHg)",
+                  "score": 1
+                },
+                {
+                  "criterion": "Age 75 or older",
+                  "patient_finding": "No (age: 72)",
+                  "score": 0
+                },
+                {
+                  "criterion": "Diabetes Mellitus",
+                  "patient_finding": "Not documented",
+                  "score": 0
+                },
+                {
+                  "criterion": "Stroke/TIA history",
+                  "patient_finding": "Not documented",
+                  "score": 0
+                },
+                {
+                  "criterion": "Vascular disease",
+                  "patient_finding": "Not documented",
+                  "score": 0
+                },
+                {
+                  "criterion": "Age 65-74",
+                  "patient_finding": "Yes (age: 72)",
+                  "score": 1
+                },
+                {
+                  "criterion": "Sex category female",
+                  "patient_finding": "Yes",
+                  "score": 1
+                }
+              ],
+              "total_score": 4,
+              "risk_level": "Moderate",
+              "recommendation": "Oral anticoagulation recommended",
+              "reasoning": "The patient has atrial fibrillation and a CHA2DS2-VASc score of 4, indicating a moderate risk of stroke. The patient is already on Apixaban 5mg BD, which is an oral anticoagulant.",
+              "differential_diagnosis": [
+                "Atrial fibrillation with stroke risk",
+                "Congestive heart failure exacerbation",
+                "Chronic kidney disease progression"
+              ]
+            }
+          ],
+          "overall_risk_level": "Moderate",
+          "assessment_type": "specific_scoring"
+        },
+        "_ingested_at": "2026-04-13T08:11:37.224805"
+      }
+    ]
+  },
+  "P003": {
+    "patient_id": "P003",
+    "name": "Arjun Mehta",
+    "age": 34,
+    "gender": "Male",
+    "blood_group": "A+",
+    "demographics": {
+      "height_cm": 178,
+      "weight_kg": 72,
+      "bmi": 22.7
+    },
+    "vitals_latest": {
+      "blood_pressure_systolic": 122,
+      "blood_pressure_diastolic": 78,
+      "heart_rate": 74,
+      "temperature_celsius": 37.0,
+      "spo2": 99,
+      "respiratory_rate": 14,
+      "recorded_at": "2026-04-10T09:00:00"
+    },
+    "medical_history": [
+      {
+        "condition": "Seasonal Allergic Rhinitis",
+        "diagnosed_year": 2020,
+        "status": "intermittent",
+        "medications": [
+          "Cetirizine 10mg PRN"
+        ]
+      }
+    ],
+    "allergies": [],
+    "surgical_history": [],
+    "family_history": [
+      "Father: Hypertension (controlled)",
+      "No family history of cardiac disease"
+    ],
+    "lab_results_recent": {
+      "CBC": {
+        "value": "Normal",
+        "unit": "",
+        "reference": "Normal",
+        "date": "2026-03-20"
+      },
+      "Lipid_panel": {
+        "value": "Normal",
+        "unit": "",
+        "reference": "Normal",
+        "date": "2026-03-20"
+      },
+      "Fasting_glucose": {
+        "value": 92,
+        "unit": "mg/dL",
+        "reference": "70-100",
+        "date": "2026-03-20"
+      }
+    },
+    "current_complaints": [
+      "Routine annual health checkup",
+      "Occasional mild headaches - likely tension type"
+    ]
+  }
+}
